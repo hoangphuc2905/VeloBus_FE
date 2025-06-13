@@ -1,0 +1,61 @@
+.all-trips-container {
+    padding: 30px;
+  
+    .trip-item {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  
+      .trip-details {
+        p {
+          margin: 5px 0;
+        }
+  
+        .edit-button,
+        .delete-button {
+          padding: 10px 15px;
+          margin: 5px;
+          border: none;
+          border-radius: 5px;
+          color: #fff;
+          cursor: pointer;
+        }
+  
+        .edit-button {
+          background-color: #007bff;
+  
+          &:hover {
+            background-color: #0056b3;
+          }
+        }
+  
+        .delete-button {
+          background-color: #dc3545;
+  
+          &:hover {
+            background-color: #c82333;
+          }
+        }
+      }
+    }
+  
+    .form-group {
+      margin-bottom: 20px;
+    }
+  
+    .submit-button {
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #218838;
+      }
+    }
+  }
+  

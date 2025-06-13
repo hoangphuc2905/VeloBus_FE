@@ -1,0 +1,135 @@
+@use "sass:map";
+@import "style/pages/theme";
+
+.footer {
+  background: #ff6a000e;
+  padding-top: 70px;
+  padding-bottom: 0;
+  .footer-about {
+    margin-bottom: 30px;
+
+    .footer-about-logo {
+      margin-bottom: 15px;
+      display: inline-block;
+    }
+
+    ul li {
+      list-style: none;
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: map.get($theme-colors, "normal-text");
+    }
+  }
+
+  .footer-widget {
+    margin-bottom: 30px;
+    overflow: hidden;
+
+    h6 {
+      font-size: 20px;
+      color: map.get($theme-colors, "normal-text");
+      margin-bottom: 20px;
+    }
+
+    ul li {
+      list-style: none;
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: map.get($theme-colors, "normal-text");
+      float: left;
+      width: 50%;
+
+      a {
+        color: map.get($theme-colors, "normal-text");
+        text-decoration: none;
+        &:hover {
+          color: map.get($theme-colors, "main");
+        }
+      }
+    }
+
+    p {
+      font-size: 16px;
+      color: map.get($theme-colors, "normal-text");
+      padding-bottom: 30px;
+    }
+
+    form {
+      position: relative;
+      margin-bottom: 30px;
+
+      .input-group {
+        display: flex;
+        align-items: center;
+
+        input {
+          width: 100%;
+          padding-left: 20px;
+          height: 46px;
+          border: 1px solid #e5e5e5;
+          border-radius: 5px;
+          font-size: 16px;
+          color: map.get($theme-colors, "normal-text");
+
+          &::placeholder {
+            color: map.get($theme-colors, "normal-text");
+          }
+        }
+
+        button {
+          padding: 0 26px;
+          height: 46px;
+          min-width: max-content;
+          background: map.get($theme-colors, "main");
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+
+          &:hover {
+            background: darken(map.get($theme-colors, "main"), 10%);
+          }
+        }
+      }
+    }
+
+    .footer-widget-social {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+
+      div {
+        :hover {
+          background: map.get($theme-colors, "main");
+          color: white;
+          border-color: white;
+        }
+
+        svg {
+          font-size: 20px;
+          color: #404040;
+          padding: 10px;
+          border-radius: 50%;
+          transition: all 0.3s;
+          background: #f3f6fa;
+        }
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  background: rgb(7, 111, 7);
+  padding: 10px 0;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    &:hover {
+      color: map.get($theme-colors, "normal-text");
+    }
+  }
+}

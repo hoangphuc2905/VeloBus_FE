@@ -1,0 +1,47 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px; 
+  right: 30px; 
+  z-index: 1000; 
+  display: flex;
+  flex-direction: column; 
+  gap: 10px; 
+}
+
+.scroll-button {
+  background-color: #ff9900; 
+  color: #fff; 
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.scroll-button:hover {
+  background-color: #ffab03; 
+}
+
+.scroll-button:focus {
+  outline: none;
+}
+
+.chat-button {
+  background-color: #ff9900; 
+  color: #fff; 
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.chat-button:hover {
+  background-color: #ffab03; 
+}
+
+.chat-button:focus {
+  outline: none;
+}

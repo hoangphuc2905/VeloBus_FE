@@ -1,0 +1,48 @@
+.admin-container {
+    display: flex;
+    height: 100vh;
+
+  .admin-sidebar {
+    width: 250px;
+    background-color: #1d1d1e;
+    padding: 20px;
+    color: white;
+    height: 100%;
+  }
+  
+  .admin-sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .admin-sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .admin-sidebar ul li {
+    margin-bottom: 15px;
+  }
+  
+  .admin-sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .admin-sidebar ul li a:hover {
+    color: #f39c12;
+  }
+  
+  .menu-icon {
+    margin-right: 10px;
+  }
+  
+  .admin-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+}
+  
