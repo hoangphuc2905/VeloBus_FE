@@ -15,7 +15,6 @@ interface RouterConfig {
     ADDRESS: string;
     RESET_PASSWORD: string;
     GUIDE: string;
-    NEWS: string;
   };
   ADMIN: {
     HOMEADMIN: string;
@@ -43,7 +42,6 @@ export const ROUTER: RouterConfig = {
     ADDRESS: "address",
     RESET_PASSWORD: "reset-password",
     GUIDE: "guide",
-    NEWS: "news",
   },
   ADMIN: {
     HOMEADMIN: "admin",
