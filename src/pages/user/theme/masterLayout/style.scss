@@ -1,0 +1,24 @@
+.master-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.master-layout-content {
+  flex-grow: 1; // Ensures content area takes up available space
+  width: 100%;
+  box-sizing: border-box; // Includes padding and border in the element's total width and height
+  background-color: #f0f2f5; /* Thêm màu nền để dễ dàng nhận diện */
+  overflow: hidden; /* Rất quan trọng để cắt bỏ nội dung tràn ra */
+  position: relative; /* Thiết lập ngữ cảnh xếp chồng mới */
+  padding: 20px; /* Ví dụ: Thêm padding để nội dung không dính sát viền */
+  // You might want to add some padding here if needed:
+  // padding: 20px;
+}
+
+// The previous rule targeting direct children (Header, Footer etc.) is replaced by .master-layout-content
+// .master-layout > *:not(.header-top):not(.footer) {
+//   flex-grow: 1;
+//   width: 100%;
+//   box-sizing: border-box;
+// } 

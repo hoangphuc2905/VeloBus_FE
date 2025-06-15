@@ -21,7 +21,6 @@ import AddTrip from "pages/admin/AddTrip";
 import ManageTrips from "pages/admin/ManageTrips";
 import ManageUsers from "pages/admin/ManageUsers";
 import Statistics from "pages/admin/Statistics";
-import News from "pages/user/News";
 
 const UserRoutes: React.FC = () => (
   <Routes>
@@ -32,7 +31,6 @@ const UserRoutes: React.FC = () => (
     <Route path={ROUTER.USER.CONTACT} element={<MasterLayout><Contact /></MasterLayout>} />
     <Route path={ROUTER.USER.SCHEDULE} element={<MasterLayout><Schedule /></MasterLayout>} />
     <Route path={ROUTER.USER.LOGIN} element={<MasterLayout><Login /></MasterLayout>} />
-    <Route path={ROUTER.USER.NEWS} element={<MasterLayout><News /></MasterLayout>} />
     <Route path={`${ROUTER.USER.BOOK_TICKET}/:tripId`} element={<MasterLayout><BookTicket /></MasterLayout>} />
     <Route path={ROUTER.USER.GUIDE} element={<MasterLayout><Guide /></MasterLayout>} />
 
